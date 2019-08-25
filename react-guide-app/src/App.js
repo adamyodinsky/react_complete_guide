@@ -24,8 +24,6 @@ class App extends Component {
     this.setState({ persons: newPersons });
   }
 
-
-
   ageChangedHandler = (event, index) => {
     const newPersons = [...this.state.persons];
     const newPerson = { ...newPersons[index] };
@@ -35,7 +33,6 @@ class App extends Component {
 
     this.setState({ persons: newPersons });
   }
-
 
   deletePersonHandler = (index) => {
     const newPersons = [...this.state.persons]
