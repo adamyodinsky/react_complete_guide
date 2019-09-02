@@ -26,6 +26,13 @@ class App extends React.Component {
 
   render() {
 
+    const style = {
+      backgroundColor: 'green',
+      font: 'inherit',
+      border: '1px solid true',
+      padding: '8px',
+      curser: 'pointer'
+    }
     let CharsList = this.state.str.split('').map((ch, index) => {
         return <CharComponent
             char={ch}
